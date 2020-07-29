@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="debug">...</div>
+    <script>
+        var playerList=
+        [
+            { name: "Jeter", number: 2},
+            { name: "Lin", number: 7},
+            { name: "Wang", number: 40}
+        ]
+
+        var s = JSON.stringify(playerList);
+        var s2 = '[{"name":"Jeter","number":2},{"name":"Lin","number":7},{"name":"Wang","number":40}]'
+
+        var dataList2 = JSON.parse(s2);
+        // var person = 
+        // {
+        //    firstName: "Jermmy",
+        //    lastName: "Wang",
+        //    height: 190,
+        //    sayHello: function()
+        //    {
+        //        return "Hello I'am "+this.firstName;
+        //    }
+        // }
+        //debug.innerText = person.sayHello();
+        //debug.innerText = s;
+        debug.innerText = dataList2[2].name;
+    </script>
+    
+</body>
+</html>
